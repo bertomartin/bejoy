@@ -11,7 +11,7 @@ set :server_name, "cornerstoneduplex.com www.cornerstoneduplex.com"
 # at filepaths
 set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
 
-server 'cornerstoneduplex.com', user: 'deploy', roles: %w{web app db}, primary: true
+server '104.131.68.26', user: 'deploy', roles: %w{web app db}, primary: true
 
 set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/#{fetch(:full_app_name)}"
 
